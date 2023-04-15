@@ -11,7 +11,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(router)
 
-const mongoURL = process.env.MONGO_URI;
+const mongoURL = process.env.MONGODB_URI;
 
 router.route('/').get((req, res) => {
     res.send('Success')
